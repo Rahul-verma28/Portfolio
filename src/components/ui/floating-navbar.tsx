@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 import {
   motion,
   AnimatePresence,
@@ -23,14 +23,11 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(false);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
-
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
       } else {
@@ -62,8 +59,17 @@ export const FloatingNav = ({
           className
         )}
       >
-        <h1 className="text-2xl hover:underline uppercase flex items-center gap-2"><Image src="/image.png" className=" rounded-full" width={40} height={40} alt="Logo"/>Rahul.</h1>
-        <div className="flex items-center space-x-4 "> 
+        <h1 className="text-2xl hover:underline uppercase flex items-center gap-2">
+          <Image
+            src="/image.png"
+            className=" rounded-full"
+            width={40}
+            height={40}
+            alt="Logo"
+          />
+          Rahul.
+        </h1>
+        <div className="flex items-center space-x-4">
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
@@ -79,13 +85,13 @@ export const FloatingNav = ({
         </div>
         <div className="flex items-center gap-2 justify-center text-center">
           <ModeToggle />
-            <HoverBorderGradient
-              containerClassName="rounded-full"
-              as="button"
-              className="flex items-center space-x-2"
-            >
-              <span>Let's Connect</span>
-            </HoverBorderGradient>
+          <HoverBorderGradient
+            containerClassName="rounded-full"
+            as="button"
+            className="flex items-center space-x-2"
+          >
+            <span>Let&apos;s Connect</span>
+          </HoverBorderGradient>
         </div>
       </motion.div>
     </AnimatePresence>

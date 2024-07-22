@@ -10,7 +10,7 @@ import {
   FaReact,
   FaNodeJs,
   FaPython,
-  FaGithub
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -83,8 +83,8 @@ export function Skills() {
       icon: <FaGithub size={36} />,
     },
   ];
-  const words = `I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.
-`;
+
+  const words = `I&apos;m a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I&apos;m a self-motivated and hardworking individual who is always ready to learn new things and work in a team.`;
 
   return (
     <motion.div
@@ -96,14 +96,13 @@ export function Skills() {
         ease: "easeInOut",
       }}
       className="relative flex flex-col gap-4 items-center max-w-screen-lg mx-auto"
-
     >
-      <div className=" text-gray-900 dark:text-white py-10">
+      <div className="text-gray-900 dark:text-white py-10">
         <h2 className="text-4xl font-bold mb-4">Skills</h2>
         <p className="text-lg font-normal text-neutral-600 dark:text-neutral-400 my-8">
           I have extensive experience working with a variety of technologies as
-          a web developer. I've developed and maintained multiple projects using
-          these technologies, and I'm always eager to learn more.
+          a web developer. I&apos;ve developed and maintained multiple projects using
+          these technologies, and I&apos;m always eager to learn more.
         </p>
         {/* <TextGenerateEffect words={words} /> */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -135,6 +134,5 @@ export function Skills() {
         </div>
       </div>
     </motion.div>
-
   );
 }

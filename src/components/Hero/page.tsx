@@ -40,11 +40,11 @@ export function Hero() {
             </div>
             <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
               <div className="text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
-                I'm a
+                I&apos;m a
                 <FlipWords words={words} /> <br />
               </div>
             </div>
-            <button className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-black dark:bg-white dark:hover:bg-volet-500 rounded-lg w-fit text-white dark:text-black px-4 py-2">
+            <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-black dark:bg-white dark:hover:bg-volet-500 rounded-lg w-fit text-white dark:text-black px-4 py-2">
               Resume
             </button>
           </div>
