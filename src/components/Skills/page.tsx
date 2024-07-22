@@ -1,40 +1,90 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "../ui/moving-border";
 import React from "react";
 
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaGithub
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiMongodb,
+  SiExpress,
+  SiMysql,
+} from "react-icons/si";
+
 export function Skills() {
-  const data = [
+  const skills = [
     {
       name: "HTML",
-      icon: "aa",
+      description: "Markup language for web pages",
+      icon: <FaHtml5 size={36} />,
     },
     {
       name: "CSS",
-      icon: "aa",
+      description: "Style sheet language for web pages",
+      icon: <FaCss3Alt size={36} />,
     },
     {
-      name: "JAVASCRIPT",
-      icon: "aa",
+      name: "JavaScript",
+      description: "Programming language for web development",
+      icon: <FaJs size={36} />,
     },
     {
-      name: "REACT",
-      icon: "aa",
+      name: "React",
+      description: "JavaScript library for building user interfaces",
+      icon: <FaReact size={36} />,
     },
     {
-      name: "NEXT",
-      icon: "aa",
+      name: "Next.js",
+      description: "React framework for server-side rendering",
+      icon: <SiNextdotjs size={36} />,
     },
     {
-      name: "TAILWIND",
-      icon: "aa",
+      name: "Tailwind CSS",
+      description: "Utility-first CSS framework",
+      icon: <SiTailwindcss size={36} />,
     },
     {
-      name: "TYPESCRIPT",
-      icon: "aa",
+      name: "Node.js",
+      description: "JavaScript runtime for server-side development",
+      icon: <FaNodeJs size={36} />,
+    },
+    {
+      name: "Express",
+      description: "Web application framework for Node.js",
+      icon: <SiExpress size={36} />,
+    },
+    {
+      name: "MongoDB",
+      description: "NoSQL database",
+      icon: <SiMongodb size={36} />,
+    },
+    {
+      name: "MySQL",
+      description: "Relational database management system",
+      icon: <SiMysql size={36} />,
+    },
+    {
+      name: "Python",
+      description: "High-level programming language",
+      icon: <FaPython size={36} />,
+    },
+    {
+      name: "Git",
+      description: "Version control system",
+      icon: <FaGithub size={36} />,
     },
   ];
+  const words = `I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.
+`;
 
   return (
     <motion.div
@@ -45,23 +95,46 @@ export function Skills() {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="relative flex flex-col gap-4 items-center justify-center px-4"
+      className="relative flex flex-col gap-4 items-center max-w-screen-lg mx-auto"
+
     >
-      <section id="about" className=" max-w-screen-lg mx-auto min-h-screen">
-        <div className="text-xl md:text-5xl font-semibold dark:text-white">
-          Skills
-        </div>
-        {data.map((e) => {
-          return (
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white dark:bg-slate-900 hover:text-violet-500 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+      <div className=" text-gray-900 dark:text-white py-10">
+        <h2 className="text-4xl font-bold mb-4">Skills</h2>
+        <p className="text-lg font-normal text-neutral-600 dark:text-neutral-400 my-8">
+          I have extensive experience working with a variety of technologies as
+          a web developer. I've developed and maintained multiple projects using
+          these technologies, and I'm always eager to learn more.
+        </p>
+        {/* <TextGenerateEffect words={words} /> */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {skills.map((skill, index) => (
+            <motion.div
+              initial={{ opacity: 0.0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.3,
+                duration: 0.8,
+                ease: "easeInOut",
+              }}
+              key={skill.name}
+              className="flex items-center bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-150 hover:bg-gray-300 dark:hover:bg-gray-700 group hover:shadow-2xl hover:shadow-indigo-400 hover:border-indigo-400"
             >
-              {e.name}
-            </Button>
-          );
-        })}
-      </section>
+              <div className="mr-4 group-hover:text-indigo-400 transition-colors duration-300">
+                {skill.icon}
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold group-hover:text-indigo-400 transition-colors duration-300">
+                  {skill.name}
+                </h3>
+                <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400">
+                  {skill.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </motion.div>
+
   );
 }

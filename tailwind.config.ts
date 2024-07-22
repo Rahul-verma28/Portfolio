@@ -25,6 +25,8 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        'mr-dafoe': ['"Mr Dafoe"', 'sans-serif'],
+
       },
       colors: {
         border: "hsl(var(--border))",
@@ -92,7 +94,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+  plugins: [require("tailwindcss-animate"), require('daisyui'), addVariablesForColors],
   
 } satisfies Config
 
