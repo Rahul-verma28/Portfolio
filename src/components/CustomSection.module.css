@@ -1,4 +1,4 @@
-/* components/CustomSection.module.css */
+components/CustomSection.module.css
 .customBackground {
     background-image: linear-gradient(90deg, rgb(33, 33, 33) 0%, transparent 59%),
                       repeating-linear-gradient(45deg, rgba(168, 168, 168, 0.1) 0px, rgba(168, 168, 168, 0.1) 1px, transparent 1px, transparent 13px),

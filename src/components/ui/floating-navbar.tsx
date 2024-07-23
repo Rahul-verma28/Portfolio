@@ -59,9 +59,9 @@ export const FloatingNav = ({
           className
         )}
       >
-        <h1 className="text-2xl hover:underline uppercase flex items-center gap-2">
+        <h1 className="text-3xl hover:underline font-tangerine font-extrabold text-violet-500 flex items-center gap-2">
           <Image
-            src="/image.png"
+            src="/logo.png"
             className=" rounded-full"
             width={40}
             height={40}

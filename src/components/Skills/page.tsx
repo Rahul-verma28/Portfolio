@@ -95,11 +95,12 @@ export function Skills() {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="relative flex flex-col gap-4 items-center max-w-screen-lg mx-auto"
+      className="relative flex flex-col gap-4 px-10 lg:p-2 items-center light-mode-background-skills dark:bg-none"
     >
-      <div className="text-gray-900 dark:text-white py-10">
-        <h2 className="text-4xl font-bold mb-4">Skills</h2>
-        <p className="text-lg font-normal text-neutral-600 dark:text-neutral-400 my-8">
+      <div className="text-gray-900 dark:text-white py-10 max-w-screen-lg mx-auto ">
+        <h2 className="text-4xl font-bold mb-4 text-indigo-500
+        ">Skills</h2>
+        <p className="text-md font-normal text-neutral-600 dark:text-neutral-400 my-8">
           I have extensive experience working with a variety of technologies as
           a web developer. I&apos;ve developed and maintained multiple projects using
           these technologies, and I&apos;m always eager to learn more.
@@ -122,10 +123,10 @@ export function Skills() {
                 {skill.icon}
               </div>
               <div>
-                <h3 className="text-2xl font-semibold group-hover:text-indigo-400 transition-colors duration-300">
+                <h3 className="text-lg md:text-2xl font-semibold group-hover:text-indigo-400 transition-colors duration-300">
                   {skill.name}
                 </h3>
-                <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400">
+                <p className=" text-xs md:text-sm font-normal text-neutral-600 dark:text-neutral-400">
                   {skill.description}
                 </p>
               </div>
