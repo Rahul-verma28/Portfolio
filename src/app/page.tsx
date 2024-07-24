@@ -7,6 +7,7 @@ import { Hero } from "@/components/Hero/page";
 import { Projects } from "@/components/Projects/page";
 import { Services } from "@/components/Services/page";
 import { Skills } from "@/components/Skills/page";
+import BackToTop from "@/components/ui/backToTop";
 import { Navbar } from "@/components/ui/navbar";
 import ProgressBar from "react-scroll-progress-bar";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Projects />
       <Contact/>
       <Footer/>
+      <BackToTop/>
     </>
   );
 }

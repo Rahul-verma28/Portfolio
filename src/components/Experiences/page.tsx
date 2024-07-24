@@ -13,9 +13,6 @@ const Experiences = () => {
       }}
       id="#experiences"
     >
-      {/* <h2 className="text-3xl font-semibold my-6 text-gray-700 dark:text-gray-300">
-        Experiences
-      </h2> */}
       <h1 className="text-4xl font-bold mb-3 text-indigo-500 my-9">
       Experiences
           </h1>

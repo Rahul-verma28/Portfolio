@@ -12,7 +12,7 @@ const projects = [
     description: "A Conference for and by Cybersecurity community.",
     image: "/bsides.png",
     liveDemo: "https://bsidesdehradun.com/",
-    github: "https://github.com/Rahul-verma28/youtube",
+    github: "https://github.com/Rahul-verma28",
     skills: ["next js", "tailwind", "node js"],
   },
   {
@@ -63,7 +63,7 @@ export function Projects() {
       id="projects"
       className="relative flex flex-col gap-8 pt-10 items-center justify-center light-mode-background-projects dark:bg-none"
     >
-      <section className="px-10 sm:px-5">
+      <section className="px-4 sm:px-5">
         <div className="mx-auto max-w-screen-lg">
           <h1 className="text-4xl font-bold mb-5 text-indigo-500 text-center">
             Projects
@@ -125,7 +125,9 @@ export function Projects() {
                       </CardItem>
                       <CardItem
                         translateZ={20}
-                        as="button"
+                        as={Link}
+                        href={project.github}
+                        target="__blank"
                         className="px-4 py-2 flex items-center gap-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                       >
                         <FaGithub />

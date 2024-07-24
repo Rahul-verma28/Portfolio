@@ -30,18 +30,17 @@ export function Hero() {
           ease: "easeInOut",
         }}
         className="relative max-w-screen-lg md:mx-auto px-10 lg:p-2"
-        id="home"
       >
         <Header />
-        <div className="h-full w-full min-h-screen md:flex justify-between items-center gap-5 py-20">
-          <div>
-            <div className="text-sm pb-3 font-normal text-neutral-600 dark:text-neutral-400 uppercase">
+        <div className="h-full w-full min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center gap-5 py-5">
+          <div className="text-center md:text-left">
+            <div className="text-sm pb-5 font-normal text-neutral-600 dark:text-neutral-400 uppercase">
               Welcome to my website
             </div>
-            <div className="text-5xl md:text-7xl font-semibold dark:text-white flex ">
+            <div className="text-5xl md:text-7xl font-semibold dark:text-white flex">
               Rahul Verma
             </div>
-            <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 mb-4">
+            <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
               <div className="text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
                 I&apos;m a
                 <FlipWords words={words} /> <br />
@@ -50,12 +49,12 @@ export function Hero() {
             <Link
               href="Resume.pdf"
               download="Resume.pdf"
-              className="transition flex gap-3 items-center ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-black dark:bg-white dark:hover:bg-volet-500 rounded-lg w-fit text-white dark:text-black px-4 py-2"
+              className="transition flex gap-3 items-center ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-black dark:bg-white dark:hover:bg-volet-500 rounded-lg w-fit text-white dark:text-black px-4 py-2 mx-auto md:mx-0"
             >
               <HiOutlineNewspaper /> <span>Resume</span>
             </Link>
           </div>
-          <div>
+          <div className="mt-5 md:mt-0">
             <Image
               src="/hero.png"
               alt="img"

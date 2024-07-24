@@ -29,7 +29,7 @@ export function Sidebar() {
               <div className="pb-4 border-b dark:border-gray-700 border-gray-300">
                 <div className="flex items-center space-x-4">
                   <Image
-                    src="/image.png"
+                    src="/logo.png"
                     alt="Avatar"
                     width={40}
                     height={40}
@@ -70,21 +70,21 @@ export function Sidebar() {
                 </Link>
               </li>
               <li>
-                <Link href="#projects" prefetch={false}>
-                  <div className="flex items-center space-x-3 px-3 py-2 rounded-md dark:hover:bg-gray-700 hover:bg-gray-300 transition-colors">
-                    <FaBriefcase className="w-5 h-5 dark:text-gray-400 text-gray-600" />
-                    <span className="text-base font-medium dark:text-white text-gray-800">
-                      Projects
-                    </span>
-                  </div>
-                </Link>
-              </li>
-              <li>
                 <Link href="#services" prefetch={false}>
                   <div className="flex items-center space-x-3 px-3 py-2 rounded-md dark:hover:bg-gray-700 hover:bg-gray-300 transition-colors">
                     <FaTools className="w-5 h-5 dark:text-gray-400 text-gray-600" />
                     <span className="text-base font-medium dark:text-white text-gray-800">
                       Services
+                    </span>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link href="#projects" prefetch={false}>
+                  <div className="flex items-center space-x-3 px-3 py-2 rounded-md dark:hover:bg-gray-700 hover:bg-gray-300 transition-colors">
+                    <FaBriefcase className="w-5 h-5 dark:text-gray-400 text-gray-600" />
+                    <span className="text-base font-medium dark:text-white text-gray-800">
+                      Projects
                     </span>
                   </div>
                 </Link>

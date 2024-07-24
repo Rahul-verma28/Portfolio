@@ -32,7 +32,7 @@ const Header = () => {
         initial={{ opacity: 0, y: -100 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}
-        className="flex justify-between max-w-screen-xl top-0 inset-x-0 mx-auto px-10 md:px-5 py-5 items-center space-x-4 absolute"
+        className="flex justify-between max-w-screen-xl top-0 inset-x-0 mx-auto px-6 py-5 items-center space-x-4 absolute"
       >
         <h1 className="text-4xl font-tangerine text-violet-500 e font-extrabold flex items-center gap-2 cursor-pointer">
           <Image

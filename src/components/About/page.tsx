@@ -17,7 +17,7 @@ export function About() {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className={`flex flex-col justify-center gap-4 relative p-10 md:px-8 light-mode-background-about dark:bg-none`}
+      className={`flex flex-col justify-center gap-4 relative p-6 md:px-8 light-mode-background-about dark:bg-none`}
       id="about"
     >
       <div className="mx-auto min-h-screen py-10 max-w-screen-lg">

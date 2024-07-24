@@ -95,18 +95,18 @@ export function Skills() {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="relative flex flex-col gap-4 px-10 lg:p-2 items-center light-mode-background-skills dark:bg-none md:text-center"
+      className="relative flex flex-col gap-4 px-6 lg:p-2 items-center light-mode-background-skills dark:bg-none"
     >
       <div className="text-gray-900 dark:text-white py-10 max-w-screen-lg mx-auto ">
-        <h2 className="text-4xl font-bold mb-4 text-indigo-500
+        <h2 className="text-4xl font-bold mb-4 text-indigo-500 md:text-center
         ">Skills</h2>
-        <p className="text-md font-normal text-neutral-600 dark:text-neutral-400 my-8">
+        <p className="text-md font-normal text-neutral-600 dark:text-neutral-400 my-8 md:text-center">
           I have extensive experience working with a variety of technologies as
           a web developer. I&apos;ve developed and maintained multiple projects using
           these technologies, and I&apos;m always eager to learn more.
         </p>
         {/* <TextGenerateEffect words={words} /> */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
           {skills.map((skill, index) => (
             <motion.div
               initial={{ opacity: 0.0, y: 40 }}
@@ -117,9 +117,9 @@ export function Skills() {
                 ease: "easeInOut",
               }}
               key={skill.name}
-              className="flex items-center bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-150 hover:bg-gray-300 dark:hover:bg-gray-700 group hover:shadow-2xl hover:shadow-indigo-400 hover:border-indigo-400"
+              className="flex items-center gap-2 bg-gray-200 dark:bg-gray-800 p-3 sm:p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-150 hover:bg-gray-300 dark:hover:bg-gray-700 group hover:shadow-2xl hover:shadow-indigo-400 hover:border-indigo-400"
             >
-              <div className="mr-4 group-hover:text-indigo-400 transition-colors duration-300">
+              <div className="mr:1 sm:mr-4 group-hover:text-indigo-400 transition-colors duration-300">
                 {skill.icon}
               </div>
               <div>
