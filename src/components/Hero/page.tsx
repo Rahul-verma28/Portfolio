@@ -30,17 +30,18 @@ export function Hero() {
           ease: "easeInOut",
         }}
         className="relative max-w-screen-lg md:mx-auto px-10 lg:p-2"
+        id="home"
       >
         <Header />
-        <div className="h-full w-full min-h-screen md:flex justify-between items-center gap-5 py-5">
+        <div className="h-full w-full min-h-screen md:flex justify-between items-center gap-5 py-20">
           <div>
-            <div className="text-sm pb-5 font-normal text-neutral-600 dark:text-neutral-400 uppercase">
+            <div className="text-sm pb-3 font-normal text-neutral-600 dark:text-neutral-400 uppercase">
               Welcome to my website
             </div>
             <div className="text-5xl md:text-7xl font-semibold dark:text-white flex ">
               Rahul Verma
             </div>
-            <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
+            <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 mb-4">
               <div className="text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
                 I&apos;m a
                 <FlipWords words={words} /> <br />

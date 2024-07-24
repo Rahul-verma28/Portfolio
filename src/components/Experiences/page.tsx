@@ -87,8 +87,8 @@ const Experiences = () => {
             <div className="text-lg font-black text-indigo-500">
               Tech-A-Intern
             </div>
-            I've successfully completed my internship in web development with
-            Tech-A-Intern. Over the past few months, I've had the incredible
+            I have successfully completed my internship in web development with
+            Tech-A-Intern. Over the past few months, I have had the incredible
             opportunity to dive deep into the world of web development, honing
             my skills and gaining invaluable experience along the way. Grateful
             for the hands-on experience, mentorship, and opportunities to grow
@@ -125,7 +125,7 @@ const Experiences = () => {
             <div className="text-lg font-black text-indigo-500">
               Software Engineering Job Simulation
             </div>
-            I just completed J.P. Morgan's Software Engineering on Forage. In
+            I just completed J.P. Morgan Software Engineering on Forage. In
             the simulation I: * Set up a local dev environment by downloading
             the necessary files, tools and dependencies. * Fixed broken files in
             the repository to make web application output correctly. * Used
@@ -165,13 +165,13 @@ const Experiences = () => {
               Accenture North America - Coding: Development & Advanced
               Engineering Job Simulation
             </div>
-            I just completed Accenture North America's Coding: Development &
+            I just completed Accenture North America Coding: Development &
             Advanced Engineering on Forage. In the simulation I: -Completed a
             job simulation where I supported a client with a small development
             team overwhelmed by the growth of their code base. -Wrote a class to
             perform search on an interactive website in Java using the Spring
             Boot framework. -Set up automated builds using Jenkins to validate
-            code changes on every push. -Managed the team's workload by
+            code changes on every push. -Managed of the teams workload by
             preparing for a sprint and writing user stories in an Agile planning
             session.
           </div>

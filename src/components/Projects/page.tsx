@@ -71,7 +71,7 @@ export function Projects() {
           <p className="text-lg text-gray-700 dark:text-gray-300 text-center">
             A collection of my recent works and projects.
           </p>
-          <div className="grid gap-8 md:grid-cols-2 p-10 md:px-2 py-10">
+          <div className="grid gap-8 md:grid-cols-2 px-2 py-10">
             {projects.map((project) => (
               <motion.div
                 key={project.title}
@@ -84,7 +84,7 @@ export function Projects() {
                 }}
                 className="relative items-center justify-center"
               >
-                <CardContainer className="inter-var hover:shadow-2xl rounded-xl">
+                <CardContainer className="inter-var hover:shadow-2xl dark:hover:shadow-violet-500 rounded-xl">
                   <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-auto h-auto rounded-xl p-6 border  ">
                     <CardItem
                       translateZ="50"

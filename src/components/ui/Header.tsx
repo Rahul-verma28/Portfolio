@@ -32,9 +32,9 @@ const Header = () => {
         initial={{ opacity: 0, y: -100 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}
-        className="flex justify-between max-w-screen-xl top-0 inset-x-0 mx-auto px-10 py-5 items-center space-x-4 absolute"
+        className="flex justify-between max-w-screen-xl top-0 inset-x-0 mx-auto px-10 md:px-5 py-5 items-center space-x-4 absolute"
       >
-        <h1 className="text-4xl font-tangerine text-violet-500 e font-extrabold flex items-center gap-2">
+        <h1 className="text-4xl font-tangerine text-violet-500 e font-extrabold flex items-center gap-2 cursor-pointer">
           <Image
             src="/logo.png"
             className="rounded-full border-1 border-indigo-500 mr-dafoe-regular"
@@ -47,7 +47,7 @@ const Header = () => {
         <div className="md:flex items-center space-x-3 md:space-x-8 hidden">
           {navItems.map((navItem: any, idx: number) => (
             <a
-              key={`link=${idx}`}
+              key={navItem.link}
               href={navItem.link}
               onClick={(e) => handleSmoothScroll(e, navItem.link)}
               className="relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 hover:underline uppercase"
@@ -66,7 +66,7 @@ const Header = () => {
               as="button"
               className="hidden md:flex items-center space-x-2"
             >
-              <span>Let's Connect</span> <FaArrowRight />
+              <span>Let&apos;s Connect</span> <FaArrowRight />
             </HoverBorderGradient>
           </Link>
           <Sidebar />

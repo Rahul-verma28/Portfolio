@@ -95,7 +95,7 @@ export function Skills() {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="relative flex flex-col gap-4 px-10 lg:p-2 items-center light-mode-background-skills dark:bg-none"
+      className="relative flex flex-col gap-4 px-10 lg:p-2 items-center light-mode-background-skills dark:bg-none md:text-center"
     >
       <div className="text-gray-900 dark:text-white py-10 max-w-screen-lg mx-auto ">
         <h2 className="text-4xl font-bold mb-4 text-indigo-500

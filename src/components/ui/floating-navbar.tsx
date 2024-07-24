@@ -59,7 +59,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        <h1 className="text-3xl hover:underline font-tangerine font-extrabold text-violet-500 flex items-center gap-2">
+        <Link href="#home" className="text-3xl font-tangerine font-extrabold text-violet-500 flex items-center gap-2 cursor-pointer">
           <Image
             src="/logo.png"
             className=" rounded-full"
@@ -68,14 +68,14 @@ export const FloatingNav = ({
             alt="Logo"
           />
           Rahul.
-        </h1>
+        </Link>
         <div className="flex items-center space-x-4">
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:font-bold dark:hover:text-neutral-300 hover:text-blue-900 hover:underline uppercase"
+                "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:font-bold dark:hover:text-neutral-300 hover:text-indigo-500 hover:underline uppercase"
               )}
             >
               {/* <span className="block sm:hidden">{navItem.icon}</span> */}
@@ -85,13 +85,15 @@ export const FloatingNav = ({
         </div>
         <div className="flex items-center gap-2 justify-center text-center">
           <ModeToggle />
-          <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="flex items-center space-x-2"
-          >
-            <span>Let&apos;s Connect</span>
-          </HoverBorderGradient>
+          <Link href="mailto: rahulverma281202@gmail.com" target="_blank">
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="flex items-center space-x-2"
+            >
+              <span>Let&apos;s Connect</span>
+            </HoverBorderGradient>
+          </Link>
         </div>
       </motion.div>
     </AnimatePresence>

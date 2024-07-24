@@ -57,7 +57,7 @@ export function Services() {
                 className="relative items-center justify-center"
               >
                 <div
-                  className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-lg"
+                  className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl dark:hover:shadow-violet-500"
                 >
                   <service.icon className="w-12 h-12 mx-auto text-primary dark:text-primary-light mb-4" />
                   <h3 className="text-lg font-semibold mb-2 text-indigo-500">
