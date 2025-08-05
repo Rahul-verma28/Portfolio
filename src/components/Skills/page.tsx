@@ -23,22 +23,7 @@ import {
 export function Skills() {
   const skills = [
     {
-      name: "HTML",
-      description: "Markup language for web pages",
-      icon: <FaHtml5 size={36} />,
-    },
-    {
-      name: "CSS",
-      description: "Style sheet language for web pages",
-      icon: <FaCss3Alt size={36} />,
-    },
-    {
-      name: "JavaScript",
-      description: "Programming language for web development",
-      icon: <FaJs size={36} />,
-    },
-    {
-      name: "React",
+      name: "React.js",
       description: "JavaScript library for building user interfaces",
       icon: <FaReact size={36} />,
     },
@@ -48,9 +33,14 @@ export function Skills() {
       icon: <SiNextdotjs size={36} />,
     },
     {
-      name: "Tailwind CSS",
-      description: "Utility-first CSS framework",
-      icon: <SiTailwindcss size={36} />,
+      name: "TypeScript",
+      description: "Typed superset of JavaScript",
+      icon: <FaJs size={36} />,
+    },
+    {
+      name: "Redux Toolkit",
+      description: "State management for React applications",
+      icon: <FaReact size={36} />,
     },
     {
       name: "Node.js",
@@ -58,7 +48,7 @@ export function Skills() {
       icon: <FaNodeJs size={36} />,
     },
     {
-      name: "Express",
+      name: "Express.js",
       description: "Web application framework for Node.js",
       icon: <SiExpress size={36} />,
     },
@@ -73,12 +63,37 @@ export function Skills() {
       icon: <SiMysql size={36} />,
     },
     {
-      name: "Python",
-      description: "High-level programming language",
+      name: "HTML5",
+      description: "Modern markup language for web pages",
+      icon: <FaHtml5 size={36} />,
+    },
+    {
+      name: "CSS3",
+      description: "Modern style sheet language for web pages",
+      icon: <FaCss3Alt size={36} />,
+    },
+    {
+      name: "JavaScript (ES6+)",
+      description: "Modern JavaScript for web development",
+      icon: <FaJs size={36} />,
+    },
+    {
+      name: "Tailwind CSS",
+      description: "Utility-first CSS framework",
+      icon: <SiTailwindcss size={36} />,
+    },
+    {
+      name: "AWS",
+      description: "Cloud computing platform",
       icon: <FaPython size={36} />,
     },
     {
-      name: "Git",
+      name: "Docker",
+      description: "Containerization platform",
+      icon: <FaGithub size={36} />,
+    },
+    {
+      name: "Git & GitHub",
       description: "Version control system",
       icon: <FaGithub size={36} />,
     },
@@ -101,9 +116,8 @@ export function Skills() {
         <h2 className="text-4xl font-bold mb-4 text-indigo-500 md:text-center
         ">Skills</h2>
         <p className="text-md font-normal text-neutral-600 dark:text-neutral-400 my-8 md:text-center">
-          I have extensive experience working with a variety of technologies as
-          a web developer. I&apos;ve developed and maintained multiple projects using
-          these technologies, and I&apos;m always eager to learn more.
+          Expertise in both front-end and back-end technologies to build complete solutions. 
+          Specialized in the MERN stack with experience in modern development tools and cloud deployment.
         </p>
         {/* <TextGenerateEffect words={words} /> */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">

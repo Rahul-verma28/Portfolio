@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 import React from "react";
 import Experiences from "../Experiences/page";
 
-const words = `I am a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I am a self-motivated and hardworking individual who is always ready to learn new things and work in a team.`;
+const words = `Self-motivated Full Stack Developer from Greater Noida, India with expertise in the MERN stack. Passionate about building dynamic, high-performance web applications with clean, maintainable code. Currently enhancing CRM systems as an SDE Intern at Makunai Global while completing my BSc in Computer Science and Engineering from Galgotias University (CGPA: 8.4).`;
 
 export function About() {
   return (
@@ -42,10 +42,10 @@ export function About() {
               <div className="space-y-4">
                 <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg shadow-sm">
                   <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
-                    B.Sc. in Computer Science
+                    BSc Computer Science and Engineering
                   </h3>
                   <p className="text-gray-500 dark:text-gray-300">
-                    Galgotias University, 2022 - 2025
+                    Galgotias University, 2022 - 2025 | CGPA: 8.4/10.0
                   </p>
                 </div>
               </div>

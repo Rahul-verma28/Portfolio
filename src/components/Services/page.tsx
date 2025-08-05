@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Web Development",
+    title: "Full Stack Development",
     description:
-      "Building responsive and high-performance websites using the latest technologies.",
+      "End-to-end web application development using MERN stack with modern best practices and scalable architecture.",
     icon: FaCode,
   },
   {
-    title: "Full Stack Development",
+    title: "Frontend Development",
     description:
-      "Expertise in both front-end and back-end technologies to build complete solutions.",
+      "Modern React.js applications with Next.js, TypeScript, and responsive design using Tailwind CSS.",
     icon: FaGlobe,
   },
   {
-    title: "UI/UX Design",
+    title: "Backend Development",
     description:
-      "Designing user-friendly and visually appealing interfaces for a better user experience.",
+      "Robust Node.js APIs with Express.js, database integration, and secure authentication systems.",
     icon: FaPaintBrush,
   },
 ];

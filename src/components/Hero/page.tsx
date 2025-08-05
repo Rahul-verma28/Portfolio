@@ -12,11 +12,11 @@ import Link from "next/link";
 
 export function Hero() {
   const words = [
-    "Web Developer",
-    "Web Designer",
-    "Frontend Developer",
-    "Backend Developer",
     "Full Stack Developer",
+    "MERN Stack Developer", 
+    "React.js Developer",
+    "Node.js Developer",
+    "JavaScript Developer",
   ];
 
   return (
@@ -35,15 +35,16 @@ export function Hero() {
         <div className="h-full w-full min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center gap-5 py-5">
           <div className="text-center md:text-left">
             <div className="text-sm pb-5 font-normal text-neutral-600 dark:text-neutral-400 uppercase">
-              Welcome to my website
+              Full Stack Developer from Greater Noida, India
             </div>
             <div className="text-5xl md:text-7xl font-semibold dark:text-white flex">
               Rahul Verma
             </div>
             <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
               <div className="text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
-                I&apos;m a
+                Building Scalable Web Applications |
                 <FlipWords words={words} /> <br />
+                <span className="text-lg">Optimized UIs | Secure Backend Systems</span>
               </div>
             </div>
             <Link

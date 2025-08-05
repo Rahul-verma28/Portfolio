@@ -20,8 +20,22 @@ export function Contact() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-indigo-500">Contact Me</h2>
           <p className="text-lg mb-6">
-            Feel free to reach out to me or connect with me on social media.
+            Let's discuss your next project or collaboration opportunity. I'm always open to new challenges and learning experiences.
           </p>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-indigo-500 mb-2">Email</h3>
+              <p className="text-gray-600 dark:text-gray-300">rahulverma281202@gmail.com</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-indigo-500 mb-2">Location</h3>
+              <p className="text-gray-600 dark:text-gray-300">Greater Noida, India</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-indigo-500 mb-2">Status</h3>
+              <p className="text-gray-600 dark:text-gray-300">Available for opportunities</p>
+            </div>
+          </div>
           <div className="flex w-full max-w-sm items-center mx-auto space-x-2">
             <input
               type="email"
