@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import React from "react";
 
 import {
@@ -22,6 +21,21 @@ import {
 
 export function Skills() {
   const skills = [
+        {
+      name: "HTML5",
+      description: "Modern markup language for web pages",
+      icon: <FaHtml5 size={36} />,
+    },
+    {
+      name: "CSS3",
+      description: "Modern style sheet language for web pages",
+      icon: <FaCss3Alt size={36} />,
+    },
+    {
+      name: "JavaScript",
+      description: "Modern JavaScript for web development",
+      icon: <FaJs size={36} />,
+    },
     {
       name: "React.js",
       description: "JavaScript library for building user interfaces",
@@ -33,14 +47,9 @@ export function Skills() {
       icon: <SiNextdotjs size={36} />,
     },
     {
-      name: "TypeScript",
-      description: "Typed superset of JavaScript",
-      icon: <FaJs size={36} />,
-    },
-    {
-      name: "Redux Toolkit",
-      description: "State management for React applications",
-      icon: <FaReact size={36} />,
+      name: "Tailwind",
+      description: "Utility-first CSS framework",
+      icon: <SiTailwindcss size={36} />,
     },
     {
       name: "Node.js",
@@ -63,26 +72,6 @@ export function Skills() {
       icon: <SiMysql size={36} />,
     },
     {
-      name: "HTML5",
-      description: "Modern markup language for web pages",
-      icon: <FaHtml5 size={36} />,
-    },
-    {
-      name: "CSS3",
-      description: "Modern style sheet language for web pages",
-      icon: <FaCss3Alt size={36} />,
-    },
-    {
-      name: "JavaScript (ES6+)",
-      description: "Modern JavaScript for web development",
-      icon: <FaJs size={36} />,
-    },
-    {
-      name: "Tailwind CSS",
-      description: "Utility-first CSS framework",
-      icon: <SiTailwindcss size={36} />,
-    },
-    {
       name: "AWS",
       description: "Cloud computing platform",
       icon: <FaPython size={36} />,
@@ -99,55 +88,36 @@ export function Skills() {
     },
   ];
 
-  const words = `I&apos;m a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I&apos;m a self-motivated and hardworking individual who is always ready to learn new things and work in a team.`;
-
   return (
-    <motion.div
-      initial={{ opacity: 0.0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        delay: 0.3,
-        duration: 0.8,
-        ease: "easeInOut",
-      }}
-      className="relative flex flex-col gap-4 px-6 lg:p-2 items-center light-mode-background-skills dark:bg-none"
-    >
-      <div className="text-gray-900 dark:text-white py-10 max-w-screen-lg mx-auto ">
-        <h2 className="text-4xl font-bold mb-4 text-indigo-500 md:text-center
-        ">Skills</h2>
-        <p className="text-md font-normal text-neutral-600 dark:text-neutral-400 my-8 md:text-center">
-          Expertise in both front-end and back-end technologies to build complete solutions. 
-          Specialized in the MERN stack with experience in modern development tools and cloud deployment.
+    <section className="overflow-hidden w-full px-4 py-16 bg-gradient-to-b from-slate-50 to-white dark:from-black dark:to-neutral-900">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-indigo-500 mb-3">Skills</h2>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 mb-8">
+          I work with a variety of technologies — here are some of the tools and
+          frameworks I use frequently.
         </p>
-        {/* <TextGenerateEffect words={words} /> */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
-          {skills.map((skill, index) => (
-            <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.8,
-                ease: "easeInOut",
-              }}
-              key={skill.name}
-              className="flex items-center gap-2 bg-gray-200 dark:bg-gray-800 p-3 sm:p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-150 hover:bg-gray-300 dark:hover:bg-gray-700 group hover:shadow-2xl hover:shadow-indigo-400 hover:border-indigo-400"
-            >
-              <div className="mr:1 sm:mr-4 group-hover:text-indigo-400 transition-colors duration-300">
-                {skill.icon}
-              </div>
-              <div>
-                <h3 className="text-lg md:text-2xl font-semibold group-hover:text-indigo-400 transition-colors duration-300">
+      </div>
+
+      {/* Marquee / horizontal scroller */}
+      <div className="relative mt-6 max-w-7xl mx-auto">
+        <div className="flex w-full overflow-auto">
+          <div className="flex gap-8 items-center py-6">
+            {skills.map((skill) => (
+              <button
+                key={skill.name}
+                type="button"
+                className="flex flex-col items-center justify-center min-w-[120px] px-4 py-3 rounded-lg bg-white/60 dark:bg-white/5 backdrop-blur-sm border border-gray-100 dark:border-neutral-800 hover:scale-105 transform transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                aria-label={skill.name}
+              >
+                <div className="text-indigo-600 mb-2">{skill.icon}</div>
+                <span className="text-xs md:text-sm font-medium text-neutral-700 dark:text-neutral-200">
                   {skill.name}
-                </h3>
-                <p className=" text-xs md:text-sm font-normal text-neutral-600 dark:text-neutral-400">
-                  {skill.description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+                </span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
-    </motion.div>
+    </section>
   );
 }

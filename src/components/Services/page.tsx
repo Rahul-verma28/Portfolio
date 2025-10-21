@@ -37,7 +37,7 @@ export function Services() {
       className="relative flex flex-col gap-4 items-center justify-center bg-gray-100 dark:bg-gray-900 light-mode-background-services dark:bg-none"
       id="services"
     >
-      <section  className="text-gray-800 dark:text-white py-10 max-w-screen-lg mx-auto">
+      <section  className="text-gray-800 dark:text-white py-10 max-w-7xl mx-auto">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-indigo-600">My Services</h2>
           <p className="text-lg mb-12">

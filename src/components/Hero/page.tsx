@@ -1,6 +1,4 @@
 "use client";
-import "font-awesome/css/font-awesome.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "@/components/ui/aurora-background";
@@ -22,49 +20,56 @@ export function Hero() {
   return (
     <AuroraBackground>
       <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="relative max-w-screen-lg md:mx-auto px-10 lg:p-2"
+        transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+        className="relative max-w-7xl mx-auto px-6 lg:px-2"
       >
         <Header />
-        <div className="h-full w-full min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center gap-5 py-5">
-          <div className="text-center md:text-left">
-            <div className="text-sm pb-5 font-normal text-neutral-600 dark:text-neutral-400 uppercase">
-              Full Stack Developer from Greater Noida, India
-            </div>
-            <div className="text-5xl md:text-7xl font-semibold dark:text-white flex">
+
+        <header className="h-full w-full min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 py-10">
+          <div className="flex-1 text-center md:text-left">
+            <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400 uppercase mb-3">
+              Welcome to my portfolio!
+            </p>
+            <h1 className="text-4xl md:text-7xl font-abold leading-tight dark:text-white">
               Rahul Verma
+            </h1>
+
+            <p className="mt-4 text-lg md:text-2xl font-light text-neutral-700 dark:text-neutral-300">
+              I'm a<span className="font-semibold"> <FlipWords words={words} /></span>
+            </p>
+
+            <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-3 justify-center md:justify-start">
+              <Link
+                href="/Resume.pdf"
+                download
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-md bg-black text-white dark:bg-white dark:text-black shadow-sm hover:translate-y-0.5 transition-transform focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                aria-label="Download resume"
+              >
+                <HiOutlineNewspaper />
+                <span>Download Resume</span>
+              </Link>
+
+              <Link
+                href="#contact"
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-md border border-neutral-200 dark:border-neutral-700 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                aria-label="Contact"
+              >
+                Contact
+              </Link>
             </div>
-            <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-              <div className="text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
-                Building Scalable Web Applications |
-                <FlipWords words={words} /> <br />
-                <span className="text-lg">Optimized UIs | Secure Backend Systems</span>
-              </div>
-            </div>
-            <Link
-              href="Resume.pdf"
-              download="Resume.pdf"
-              className="transition flex gap-3 items-center ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-black dark:bg-white dark:hover:bg-volet-500 rounded-lg w-fit text-white dark:text-black px-4 py-2 mx-auto md:mx-0"
-            >
-              <HiOutlineNewspaper /> <span>Resume</span>
-            </Link>
           </div>
-          <div className="mt-5 md:mt-0">
+
             <Image
               src="/hero.png"
-              alt="img"
-              width={500}
-              height={500}
-              className="inline-block text-center mx-auto"
+              alt="Portrait of Rahul Verma"
+              width={520}
+              height={520}
+              priority
+              className=" max-w-[320px] md:max-w-[480px]"
             />
-          </div>
-        </div>
+        </header>
       </motion.div>
     </AuroraBackground>
   );

@@ -16,7 +16,7 @@ export function Contact() {
       className="relative flex flex-col gap-4 items-center justify-center bg-gray-100 dark:bg-gray-900 py-10 border-t-4"
       id="contact"
     >
-      <section className="text-gray-800 dark:text-white max-w-screen-lg mx-auto">
+      <section className="text-gray-800 dark:text-white max-w-7xl mx-auto">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-indigo-500">Contact Me</h2>
           <p className="text-lg mb-6">
