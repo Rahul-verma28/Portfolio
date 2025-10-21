@@ -37,7 +37,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-4 text-lg md:text-2xl font-light text-neutral-700 dark:text-neutral-300">
-              I'm a<span className="font-semibold"> <FlipWords words={words} /></span>
+              I&apos;m a<span className="font-semibold"> <FlipWords words={words} /></span>
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-3 justify-center md:justify-start">

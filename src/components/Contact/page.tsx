@@ -20,7 +20,7 @@ export function Contact() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-indigo-500">Contact Me</h2>
           <p className="text-lg mb-6">
-            Let's discuss your next project or collaboration opportunity. I'm always open to new challenges and learning experiences.
+            Let&apos;s discuss your next project or collaboration opportunity. I&apos;m always open to new challenges and learning experiences.
           </p>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
