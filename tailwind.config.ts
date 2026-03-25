@@ -1,5 +1,4 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
+import type { Config } from "tailwindcss";
 
 const {
   default: flattenColorPalette,
@@ -8,11 +7,11 @@ const {
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -24,10 +23,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-        'mr-dafoe': ['"Mr Dafoe"', 'sans-serif'],
-        tangerine: ['Tangerine', 'serif'],
-
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -70,14 +66,6 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        aurora: {
-          from: {
-            backgroundPosition: "50% 50%, 50% 50%",
-          },
-          to: {
-            backgroundPosition: "350% 50%, 350% 50%",
-          },
-        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -86,28 +74,60 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        shimmer: {
+          from: { backgroundPosition: "0 0" },
+          to: { backgroundPosition: "-200% 0" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { opacity: "0.4" },
+          "50%": { opacity: "0.8" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "slide-up": {
+          from: { transform: "translateY(20px)", opacity: "0" },
+          to: { transform: "translateY(0)", opacity: "1" },
+        },
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        "spin-slow": {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+        "marquee": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-50% - 0.5rem))" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        aurora: "aurora 60s linear infinite",
-
+        shimmer: "shimmer 2s linear infinite",
+        "pulse-glow": "pulse-glow 3s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
+        "slide-up": "slide-up 0.5s ease-out",
+        "fade-in": "fade-in 0.5s ease-out",
+        "spin-slow": "spin-slow 20s linear infinite",
+        "marquee": "marquee 25s linear infinite",
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require('daisyui'), addVariablesForColors],
-  
-} satisfies Config
+  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+} satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
 }
 
-export default config
+export default config;

@@ -1,52 +1,38 @@
-// src/components/BackToTop.tsx
-import React, { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
+"use client";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiArrowUp } from "react-icons/hi";
 
-const BackToTop = () => {
-  const [isVisible, setIsVisible] = useState(false);
+export function BackToTop() {
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+    const handleScroll = () => {
+      setVisible(window.scrollY > 400);
     };
-
-    window.addEventListener('scroll', toggleVisibility);
-
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className="fixed bottom-4 right-4">
-      <AnimatePresence>
-        {isVisible && (
-          <motion.button
-            onClick={scrollToTop}
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0 }}
-            transition={{ duration: 0.3 }}
-            className="p-3 rounded-full bg-indigo-600 text-white hover:bg-indigo-500 transition duration-300"
-          >
-            <FaArrowUp />
-          </motion.button>
-        )}
-      </AnimatePresence>
-    </div>
+    <AnimatePresence>
+      {visible && (
+        <motion.button
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.5 }}
+          transition={{ duration: 0.2 }}
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 flex h-11 w-11 items-center justify-center rounded-full bg-violet-600 text-white shadow-lg shadow-violet-500/20 hover:bg-violet-700 hover:shadow-violet-500/30 transition-all duration-300 hover:scale-110"
+          aria-label="Back to top"
+        >
+          <HiArrowUp className="h-5 w-5" />
+        </motion.button>
+      )}
+    </AnimatePresence>
   );
-};
-
-export default BackToTop;
+}
