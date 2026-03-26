@@ -29,7 +29,7 @@ export function Contact() {
             </div>
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold text-indigo-500 mb-2">Location</h3>
-              <p className="text-gray-600 dark:text-gray-300">Greater Noida, India</p>
+              <p className="text-gray-600 dark:text-gray-300">Noida, India</p>
             </div>
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold text-indigo-500 mb-2">Status</h3>

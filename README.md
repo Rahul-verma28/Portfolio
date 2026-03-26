@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my expertise as a Full Stack D
 
 ## 🚀 About Me
 
-Self-motivated Full Stack Developer from Greater Noida, India with expertise in the MERN stack. Currently enhancing CRM systems as an SDE Intern at Makunai Global while completing my BSc in Computer Science and Engineering from Galgotias University (CGPA: 8.4).
+Self-motivated Full Stack Developer from Noida, India with expertise in the MERN stack. Currently enhancing CRM systems as an SDE Intern at Makunai Global while completing my BSc in Computer Science and Engineering from Galgotias University (CGPA: 8.4).
 
 ## 🛠️ Tech Stack
 
@@ -90,7 +90,7 @@ Robust Node.js APIs with Express.js, database integration, and secure authentica
 ## 📫 Contact Information
 
 - **Email**: rahulverma281202@gmail.com
-- **Location**: Greater Noida, India
+- **Location**: Noida, India
 - **LinkedIn**: [linkedin.com/in/rahul-verma-09227a263](https://www.linkedin.com/in/rahul-verma-09227a263/)
 - **GitHub**: [github.com/Rahul-verma28](https://github.com/Rahul-verma28)
 

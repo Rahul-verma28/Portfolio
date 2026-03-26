@@ -54,7 +54,7 @@ const categoryIcons: Record<string, React.ReactNode> = {
 
 export function SkillsSection() {
     return (
-        <section id="skills" className="relative py-24 md:py-32 overflow-hidden">
+        <section id="skills" className="relative pb-24 md:pb-32 overflow-hidden">
             {/* Background gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-500/[0.02] to-transparent pointer-events-none" />
 
@@ -96,7 +96,7 @@ export function SkillsSection() {
                                         <motion.div
                                             key={skill.name}
                                             variants={staggerItem}
-                                            className="group flex items-center gap-3 rounded-xl border border-white/[0.05] bg-white/[0.02] dark:bg-white/[0.01] p-3 transition-all duration-300 hover:border-violet-500/20 hover:bg-violet-500/[0.03] cursor-default"
+                                            className="group flex items-center gap-3 rounded-xl border border-neutral-200/40 dark:border-white/[0.05] bg-neutral-50/50 dark:bg-white/[0.01] p-3 transition-all duration-300 hover:border-violet-500/20 hover:bg-violet-500/[0.05] dark:hover:bg-violet-500/[0.03] cursor-default"
                                         >
                                             <div className="text-neutral-600 dark:text-neutral-400 group-hover:text-violet-500 transition-colors flex-shrink-0">
                                                 {iconMap[skill.icon] || (

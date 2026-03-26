@@ -7,7 +7,7 @@ import { GridBackground } from "@/components/ui/GridBackground";
 
 export function ExperienceSection() {
     return (
-        <section id="experience" className="relative py-24 md:py-32 overflow-hidden">
+        <section id="experience" className="relative pb-24 md:pb-32 overflow-hidden">
             <GridBackground variant="grid" className="absolute inset-0" />
 
             {/* Gradient orb */}

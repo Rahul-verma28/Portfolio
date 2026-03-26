@@ -102,6 +102,14 @@ const config = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-50% - 0.5rem))" },
         },
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -113,6 +121,7 @@ const config = {
         "fade-in": "fade-in 0.5s ease-out",
         "spin-slow": "spin-slow 20s linear infinite",
         "marquee": "marquee 25s linear infinite",
+        aurora: "aurora 60s linear infinite",
       },
     },
   },

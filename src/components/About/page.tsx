@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 import React from "react";
 import Experiences from "../Experiences/page";
 
-const words = `Self-motivated Full Stack Developer from Greater Noida, India with expertise in the MERN stack. Passionate about building dynamic, high-performance web applications with clean, maintainable code. Currently enhancing CRM systems as an SDE Intern at Makunai Global while completing my BSc in Computer Science and Engineering from Galgotias University (CGPA: 8.4).`;
+const words = `Self-motivated Full Stack Developer from Noida, India with expertise in the MERN stack. Passionate about building dynamic, high-performance web applications with clean, maintainable code. Currently enhancing CRM systems as an SDE Intern at Makunai Global while completing my BSc in Computer Science and Engineering from Galgotias University (CGPA: 8.4).`;
 
 export function About() {
   return (

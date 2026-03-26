@@ -98,7 +98,7 @@ export default function RootLayout({
               },
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Greater Noida",
+                addressLocality: "Noida",
                 addressCountry: "IN",
               },
               email: "rahulverma281202@gmail.com",
@@ -128,7 +128,6 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          disableTransitionOnChange
         >
           {children}
         </ThemeProvider>
