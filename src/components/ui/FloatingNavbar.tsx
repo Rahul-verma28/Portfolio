@@ -50,10 +50,11 @@ export function FloatingNavbar() {
           className="fixed top-4 inset-x-0 mx-auto z-[5000] max-w-5xl px-4"
         >
           <div
-            className={`flex items-center justify-between rounded-2xl border px-5 py-3 transition-all duration-500 ${scrolled
-              ? "glass-strong shadow-lg shadow-black/5 dark:shadow-black/20"
-              : "border-transparent bg-transparent"
-              }`}
+            // className={`flex items-center justify-between rounded-2xl border px-5 py-3 transition-all duration-500 ${scrolled
+            //   ? "glass-strong shadow-lg shadow-black/5 dark:shadow-black/20"
+            //   : "border-transparent bg-transparent"
+            //   }`}
+            className="flex items-center justify-between rounded-2xl border px-5 py-3 transition-all duration-500 glass-strong shadow-lg shadow-black/5 dark:shadow-black/20"
           >
             {/* Logo */}
             <Link

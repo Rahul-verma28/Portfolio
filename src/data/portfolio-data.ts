@@ -197,6 +197,17 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    title: "Junior Software Engineer - MERN Stack",
+    company: "PC Solutions",
+    period: "Oct 2025 - Present",
+    current: true,
+    highlights: [
+      "Working on SSPR (Self-Service Password Reset) system using the MERN stack for enterprise-scale organizations, enabling secure identity verification and password recovery integrated with Active Directory",
+      "Designed scalable backend architecture and REST APIs; improved backend reliability and response time through optimized queries and Express middleware",
+      "Containerized application services using Docker and deployed on VM-based infrastructure, ensuring consistent environments and reliable production hosting",
+    ],
+  },
+  {
     title: "SDE Intern",
     company: "Makunai Global",
     period: "April 2025 - Present",

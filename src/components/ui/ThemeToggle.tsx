@@ -29,30 +29,14 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-white/[0.04] backdrop-blur-sm text-neutral-600 dark:text-neutral-400 hover:text-violet-600 dark:hover:text-violet-400 hover:border-violet-500/30 transition-all duration-300"
+      className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-white/60 dark:bg-white/[0.04] backdrop-blur-sm text-neutral-600 dark:text-neutral-400 hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-100"
       aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
     >
       <AnimatePresence mode="wait" initial={false}>
         {isDark ? (
-          <motion.div
-            key="sun"
-            initial={{ rotate: -90, scale: 0, opacity: 0 }}
-            animate={{ rotate: 0, scale: 1, opacity: 1 }}
-            exit={{ rotate: 90, scale: 0, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <HiOutlineSun className="h-4 w-4" />
-          </motion.div>
+          <HiOutlineSun className="h-4 w-4" />
         ) : (
-          <motion.div
-            key="moon"
-            initial={{ rotate: 90, scale: 0, opacity: 0 }}
-            animate={{ rotate: 0, scale: 1, opacity: 1 }}
-            exit={{ rotate: -90, scale: 0, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <HiOutlineMoon className="h-4 w-4" />
-          </motion.div>
+          <HiOutlineMoon className="h-4 w-4" />
         )}
       </AnimatePresence>
     </button>

@@ -16,9 +16,9 @@ export function ModeToggle() {
   return (
     <div className="dark:text-white text-xl cursor-pointer" onClick={toggleTheme}>
       {theme === "dark" ? (
-        <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />
+        <Sun className="h-[1.2rem] w-[1.2rem]" />
       ) : (
-        <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />
+        <Moon className="h-[1.2rem] w-[1.2rem]" />
       )}
       <span className="sr-only">Toggle theme</span>
     </div>

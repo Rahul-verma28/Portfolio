@@ -9,6 +9,7 @@ import { GridBackground } from "@/components/ui/GridBackground";
 import { HiOutlineDocumentArrowDown, HiOutlineArrowDown } from "react-icons/hi2";
 import { FaGithub, FaLinkedin, FaReact, FaNodeJs } from "react-icons/fa";
 import { AuroraBackground } from "../ui/aurora-background";
+import { Typewriter } from "react-simple-typewriter";
 
 import {
     SiTypescript
@@ -77,18 +78,19 @@ export function HeroSection() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.5, duration: 0.5 }}
-                                className="h-10 md:h-12 mb-6 overflow-hidden"
+                                className="h-10 md:h-12 mb-6 flex items-center justify-center lg:justify-start"
                             >
-                                <motion.p
-                                    key={roleIndex}
-                                    initial={{ y: 30, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    exit={{ y: -30, opacity: 0 }}
-                                    transition={{ duration: 0.4, ease: "easeOut" }}
-                                    className="text-xl md:text-2xl font-medium text-neutral-600 dark:text-neutral-400"
-                                >
-                                    {heroRoles[roleIndex]}
-                                </motion.p>
+                                <p className="text-xl md:text-2xl font-medium text-neutral-600 dark:text-neutral-400">
+                                    <Typewriter
+                                        words={heroRoles}
+                                        loop={true}
+                                        cursor
+                                        cursorStyle='_'
+                                        typeSpeed={70}
+                                        deleteSpeed={50}
+                                        delaySpeed={2000}
+                                    />
+                                </p>
                             </motion.div>
 
                             {/* Description */}
